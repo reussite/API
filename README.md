@@ -34,3 +34,26 @@ Clonez le dépôt sur votre machine locale et accédez au dossier du projet :
 ```bash
 git clone https://github.com/reussite/API.git
 cd API
+
+### 2. Installer les dépendances
+
+Installez les dépendances du projet via npm :
+
+```bash
+npm install
+
+### 3. Configuration de l'environnement
+
+Créez un fichier .env à la racine du projet pour stocker les variables d'environnement. Ajoutez la chaîne de connexion MongoDB à ce fichier :
+```bash
+DATABASE_URL="mongodb://localhost:27017/nom_de_la_base"
+
+### 4.Initialisez Prisma
+ Créez le client Prisma pour MongoDB avec la commande suivante :
+
+```bash
+npx prisma generate
+
+### 5. Lancer le serveur
+```bash
+npm start
